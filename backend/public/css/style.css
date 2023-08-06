@@ -30,6 +30,7 @@ nav ul {
 }
 
 nav li {
+    color: white;
     display: inline;
     margin-right: 25px;
 }
