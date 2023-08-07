@@ -28,12 +28,12 @@ function Navigation() {
         loginActions = (
             <>
                 <li style={{ float: 'right' }}>
-                    Logged in as {currentUser.firstName} {currentUser.lastName}
+                    {currentUser.firstName} {currentUser.lastName}
                 </li>
                 <li style={{ float: 'right' }}>
                     <a href="#" onClick={() => {
                         localStorage.removeItem('token')
-                        setCurrentUser(null);
+                        setCurrentUser(null)
                         history.push("/")
                     }}>
                         Logout
